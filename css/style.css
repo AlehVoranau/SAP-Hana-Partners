@@ -55,6 +55,8 @@ p, a {
     font-size: 1.5em;
     font-weight: 700;
     margin-top: 4px;
+    float: right;
+    margin-right: 150px;
 }
 
 .search-button {
@@ -128,20 +130,42 @@ display: none;
 }
 
 .show-navigation{
-position: fixed;
-left: 5px;
-top: 100px;
+position: absolute;
+right: 18px;
+top: 12px;
 }
 .show-search{
-position: fixed;
-right: 5px;
-top: 100px;
+position: absolute;
+right: 60px;
+top: 12px;
 }
-
 
 .visible{
 	display: block;
 }
+
+.search{
+		width: 50px;
+		height: 20px;
+		margin: 0 0 30px;
+		padding: 5px;
+		background: #fff;
+		transition: all 100ms ease-out 1000ms;
+		border: solid 1px #000;
+	}
+	.search:focus{
+		width: 250px;
+		margin: 0 0 30px;
+		color: #fff;
+		transition: all 500ms ease-out 100ms;
+		background: #000;
+	}
+	.main-navigation{
+		display: block;
+	}	
+	.main-navigation-mobile{
+		display: none;
+	}
 
 @media screen and (min-width: 900px){
 	.show-block{
